@@ -4,57 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Learn Vue.js</title>
+    <title>Vue.sj</title>
 
-    <style> 
-        .color-red {color:crimson}
-        .color-blue {color:lightseagreen}
-        .is-loading {background: firebrick}
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
+    <style type="text/css">body { padding-top: 40px; }</style>
 
 </head>
 <body>
 
-    <div id="root">
+    <div id="root" class="container">
 
-        <h1 :class="className">Hello Vue.js!</h1>
-
-        <ul>
-            <li v-for="name in names" v-text="name"></li>
-        </ul>
-
-        <input id="input" type="text" v-model="newName">
-        <button @click="addName">Add name</button>
-        <button :title="title" :class="{ 'is-loading': isLoading }" @click="toggleClass">Toggle</button>
-
-        
-        <h4>
-            {{ reverseMessage }}
-        </h4>
-        
-
-        <h4>All Tasks</h4>
-
-        <ul>
-            <li v-for="task in tasks" v-text="task.description"></li>
-        </ul>
-
-        <h4>Incomplite Tasks</h4>
-
-        <ul>
-            <li v-for="task in incompliteTask" v-text="task.description"></li>
-        </ul>
-
-        <h4>Tasks</h4>
-
-        <ul>
-            <task-list></task-list>
-        </ul>
+        <message title="Hello World" body="Lorem ipsum dolor sit amet."></message>
+        <message title="Hello Somthing" body="Ipsum dolor sit litium."></message>
 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
 
-    <script src="main.js"></script>
-
+    <script src="/js/main.js"></script>
+    
+</body>
 </html>
