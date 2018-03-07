@@ -14,25 +14,9 @@
 
     <div id="root" class="container">
 
-        <tabs>
-            <tab name="About Us" :selected="true">
+        <coupon @applied="onCouponApplied"></coupon>
 
-                <h1>Here is the content for the about us tab.</h1>
-
-            </tab>
-
-            <tab name="About Cats">
-
-                <h1>The domestic cat is a small, typically furry, carnivorous mammal.</h1>
-
-            </tab>
-
-            <tab name="About Dogs">
-
-                <h1>The domestic dog is forms part of the wolf-like canids, and is the most widely abundant terrestrial carnivore.</h1>
-
-            </tab>
-        </tabs>
+        <h1 v-if="couponApplied">You used a coupon!</h1>
 
     </div>
 
