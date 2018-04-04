@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="/css/app.css" type="text/css">
+	<link rel="stylesheet" href="{{ mix('css/app.css', 'build') }}" type="text/css">
 	<title>Document</title>
 	<style>body { padding-top: 40px; }</style>
 </head>
@@ -37,7 +37,6 @@
 		</form>
 	</div>
 
-	<script src="/js/vendor.js"></script>
-	<script src="/js/app.js"></script>
+	<script src="{{ mix('js/app.js', 'build') }}"></script>
 </body>
 </html>
